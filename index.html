@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<!-- container>.row>.col*5>img+h3 -->
+
+<body> 
+    <header>
+        <div class="container">
+            <h1>New Game Plus
+            </h1>
+            <div class="dropdown">
+                <button data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">Menu</button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li class="dropdown-item">
+                        <a href="#">Cadastrar</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </header>
+    
+    <div class="container" id="produtos">
+        <h2>Produtos</h2>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Capcom</div>
+                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/03/30/resident-evil-4-remake-splash-screen-1iyfhy35nup12.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Resident Evil 4: Remake</h4>
+                        <p class="card-text">Seis anos após os eventos de Resident Evil 2, Leon Kennedy, sobrevivente de Raccoon City, foi enviado a um vilarejo isolado na Europa para investigar o desaparecimento da filha do presidente dos Estados Unidos. O que ele descobre lá é diferente de tudo o que ele já enfrentou antes.</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    Postado em: <time>08/06/2024</time>
+                </footer>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Atlus</div>
+                    <img src="https://store-images.s-microsoft.com/image/apps.8241.13660021874166335.cf99aaa0-1039-41d3-bafe-7239ec9e261c.ac0a1769-521b-48ab-83ff-63960aa88339?q=90&w=480&h=270" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Persona 3: Reload</h4>
+                        <p class="card-text">Assuma o papel de um estudante transferido que acaba vivendo um destino inesperado ao ingressar na hora "oculta" entre um dia e outro. Desperte um poder incrível, investigue a misteriosa Hora Sombria, lute em nome dos seus amigos e deixe sua marca para sempre nas memórias deles.</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>   
+                <footer class="card-footer">
+                    Postado em: <time>10/06/2024</time>
+                </footer> 
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Fromsoftware</div>
+                    <img src="https://store-images.s-microsoft.com/image/apps.26135.69038865179152125.ddcc0d78-9e3a-4110-94b3-6df63908553a.d476c9fa-e81b-4656-889e-c241d73bb93c?q=90&w=480&h=270" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Sekiro: Shadows Die Twice</h4>
+                        <p class="card-text">Sekiro: Shadows Die Twice é um jogo de ação e aventura intenso em terceira pessoa que se passa no Japão do século XVI. Entre na pele de um guerreiro que caiu em desgraça e voltou da morte, cuja missão é salvar seu mestre e se vingar do seu arqui-inimigo. Se aventurando no caminho</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    Postado em: <time>13/06/2024</time>
+                </footer>     
+            </div>
+        </div>
+    </div>
+<div class="container carrosel">
+    <div id="carousel-ex" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="4000" class="carousel-item active">
+                <img class="d-block w-100" src="https://i.ytimg.com/vi/LHe_FY1OCsc/maxresdefault.jpg" alt="">
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img class="d-block w-100" src="https://image.api.playstation.com/vulcan/ap/rnd/202307/2605/7b70e463bf05b20fbf99f8bf81956aa805969da98d9dcde8.jpg" alt="">
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img class="d-block w-100" src="https://i.ytimg.com/vi/vrSY6E-TXg4/maxresdefault.jpg" alt="">
+            </div>
+        </div>
+        <button data-bs-target="#carousel-ex" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-ex" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-ex" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-ex" data-bs-slide-to="2"></button>
+        </div>
+
+    </div>
+</div>
+<section id="contato">
+    <div class="container">
+        <h2>Contato</h2>
+        <div class="contatomed">
+            <div>
+                <h3>Fale conosco</h3>
+                <form>
+                    <input type="text" placeholder="Seu nome" required/>               
+                    <input type="email" placeholder="Seu e-mail" required/>   
+                    <input type="tel" placeholder="Seu telefone (opcional)"/>   
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div>
+                <h3>Nos acompanhe</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" title="Siga-nos no intagram">
+                            <img src="./images/instagram.png" alt="logo do insta">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Siga-nos no facebook">
+                            <img src="./images/facebook.png" alt="logo do face">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Visite nosso canal no Youtube">
+                            <img src="./images/youtube.png" alt="logo do youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Venha até nós</h3>
+            <p>
+                Rua Jonatas da Silva n69, Vila da pirataria - São Paulo - SP
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        &copy; New Game Plus - Todos os direitos reservados - 2024
+    </div>
+</footer>
+      <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
